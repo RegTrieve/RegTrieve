@@ -1,0 +1,1 @@
+export CUDA_VISIBLE_DEVICES='3';nohup python bayesian_reducing.py --old_model s2t --new_model s2t --oldmodel_path s2t-small-librispeech-asr --newmodel_path s2t-medium-librispeech-asr --dataset heysquad_human --ensemble max_belief --debug False --batch_size 8 > s2tsmall-large-max_belief.log 2>&1  & 
